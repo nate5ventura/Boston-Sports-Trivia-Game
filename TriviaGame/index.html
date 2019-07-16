@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1 align="center" >Boston Sports Trivia Game</h1><br>
+        <div id="subContainer">
+            <div class="column left"></div>
+          <div class="column middle" id="quiz-area" align="center" >
+            <button id="startButton" onclick="startGame()" >Start</button>
+            <div id="game" style="display:none" class="card" style="width: 18rem;" align="left">
+                <h1 align="center">Time Remaining: <span id="countDown">60</span></h1><br>
+                <div>How many Superbowls have the Patriots won?<br>
+                    <input id="1a" type="checkbox" name="q1" value=1 onclick="one(this)"> 3 <br>
+                    <input id="1b" type="checkbox" name="q1" value=1 onclick="one(this)"> 4 <br>
+                    <input id="1c" type="checkbox" name="q1" value=1 onclick="one(this)"> 5 <br>
+                    <input id="1d" type="checkbox" name="q1" value=1 onclick="one(this)"> 6 <br>
+                </div>
+                <div>How many seasons has Brad Marchand played for the Bruins?<br>
+                    <input id="2a" type="checkbox" name="q2" value=1 onclick="two(this)"> 6 <br>
+                    <input id="2b" type="checkbox" name="q2" value=1 onclick="two(this)"> 7 <br>
+                    <input id="2c" type="checkbox" name="q2" value=1 onclick="two(this)"> 9 <br>
+                    <input id="2d" type="checkbox" name="q2" value=1 onclick="two(this)"> 10 <br>
+                </div>
+                <div>What is the name of the Celtics Mascot?<br>
+                    <input id="3a" type="checkbox" name="q3" value=1 onclick="three(this)"> Lucky <br>
+                    <input id="3b" type="checkbox" name="q3" value=1 onclick="three(this)"> Blades <br>
+                    <input id="3c" type="checkbox" name="q3" value=1 onclick="three(this)"> Tacko <br>
+                    <input id="3d" type="checkbox" name="q3" value=1 onclick="three(this)"> Grit <br>
+                </div>
+                <div>Who is the highest win rate pitcher for the Red Sox all-time?<br>
+                    <input id="4a" type="checkbox" name="q4" value="1" onclick="four(this)"> Cy Young <br>
+                    <input id="4b" type="checkbox" name="q4" value="1" onclick="four(this)"> Pedro Martinez <br>
+                    <input id="4c" type="checkbox" name="q4" value="1" onclick="four(this)"> Roger Clemens <br>
+                    <input id="4d" type="checkbox" name="q4" value="1" onclick="four(this)"> Tim Wakefield <br>
+                </div><br>
+                <button id="submit-btn" onclick="gradeQuiz()">Submit</button>  
+              </div>
+          </div>
+          <div class="column right"></div>
+        </div>
+      </div>
+</body>
+</html>
